@@ -6,7 +6,7 @@ from flask import (
 from workos import client
 
 # Flask Setup
-DEBUG = True
+DEBUG = False
 app = Flask(__name__)
 
 # WorkOS Setup
@@ -17,7 +17,7 @@ workos.base_api_url = 'http://localhost:7000/' if DEBUG else workos.base_api_url
 
 # There'd realistically be persons with different domains trying to sign in,
 # where some may have SSO and some may not. This example assumes only workos.com
-# domains with SSO setup
+# domains with SSO setup.
 WORKOS_CUSTOMER_EMAIL_DOMAIN = 'workos.com'
 
 @app.route('/')
