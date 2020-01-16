@@ -3,11 +3,10 @@ An example Flask app demonstrating SSO with the [WorkOS Python SDK](https://gith
 
 ## Setup
 1. Clone the repo and install the dependencies by running the following:
-```bash
-git clone git@github.com:workos-inc/python-sso-example
-pip install -r requirements.txt
-```
-
+    ```bash
+    git clone git@github.com:workos-inc/python-sso-example
+    pip install -r requirements.txt
+    ```
 1. The example app looks for the following environment variables:
     - WORKOS_API_KEY - The WorkOS API key can be found [here](https://dashboard.workos.com/api-keys).
     - WORKOS_PROJECT_ID - The WorkOS Project ID is specific to SSO and can be found [here](https://dashboard.workos.com/sso/configuration)
