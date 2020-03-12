@@ -11,7 +11,7 @@ An example Flask app demonstrating SSO with the [WorkOS Python SDK](https://gith
     - WORKOS_API_KEY - The WorkOS API key can be found [here](https://dashboard.workos.com/api-keys).
     - WORKOS_PROJECT_ID - The WorkOS Project ID is specific to SSO and can be found [here](https://dashboard.workos.com/sso/configuration)
 
-1. Follow the instructions [here](https://docs.workos.com/sso/integration-guide) on setting up an SSO connection. The redirect URL for the example app if used as is will be http://localhost:5000/auth/callback.
+1. Follow the instructions [here](https://docs.workos.com/sso/auth-flow) on setting up an SSO connection. The redirect URL for the example app if used as is will be http://localhost:5000/auth/callback.
 
 ## Running the app
 Use the following command to run the app:
