@@ -1,10 +1,10 @@
-# python-sso-example
+# python-flask-sso-example
 An example Flask app demonstrating SSO with the [WorkOS Python SDK](https://github.com/workos-inc/workos-python).
 
 ## Setup
 1. Clone the repo and install the dependencies by running the following:
     ```bash
-    git clone git@github.com:workos-inc/python-sso-example
+    git clone git@github.com:workos-inc/python-flask-sso-example
     pip install -r requirements.txt
     ```
 1. The example app looks for the following environment variables:
