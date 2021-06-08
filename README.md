@@ -44,7 +44,7 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
 
 6. Obtain and make note of the following values. In the next step, these will be set as environment variables.
    - Your [WorkOS API key](https://dashboard.workos.com/api-keys)
-   - Your [SSO-specific, WorkOS Project ID](https://dashboard.workos.com/sso/configuration)
+   - Your [SSO-specific, WorkOS Project ID](https://dashboard.workos.com/configuration)
 
 7. Ensure you're in the root directory for the example app, `python-flask-sso-example/`. Create a `.env` file to securely store the environment variables. Open this file with the Nano text editor. (This file is listed in this repo's `.gitignore` file, so your sensitive information will not be checked into version control.)
    ```bash
