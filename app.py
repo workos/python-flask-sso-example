@@ -17,6 +17,7 @@ workos.base_api_url = 'http://localhost:7000/' if DEBUG else workos.base_api_url
 # where some may have SSO and some may not. This example assumes only workos.com
 # domains with SSO setup.
 CUSTOMER_EMAIL_DOMAIN = 'gmail.com'
+CUSTOMER_CONNECTION_ID = ''
 
 @app.route('/')
 def login():
@@ -24,10 +25,12 @@ def login():
 
 @app.route('/auth')
 def auth():
+
     authorization_url = workos.client.sso.get_authorization_url(
-        CUSTOMER_EMAIL_DOMAIN,
-        url_for('auth_callback', _external=True),
-        state={}
+        domain = CUSTOMER_EMAIL_DOMAIN,
+        redirect_uri = url_for('auth_callback', _external=True),
+        state = {},
+        connection = CUSTOMER_CONNECTION_ID 
     )
 
     return redirect(authorization_url)
@@ -35,6 +38,7 @@ def auth():
 @app.route('/auth/callback')
 def auth_callback():
     code = request.args.get('code')
-    profile = workos.client.sso.get_profile(code)
+    print(code)
+    profile = workos.client.sso.get_profile_and_token(code)
 
     return profile.to_dict()

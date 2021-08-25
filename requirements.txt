@@ -1,2 +1,2 @@
-Flask==1.1.1
-workos==0.0.1
+Flask==2.0.0
+workos==1.2.0
