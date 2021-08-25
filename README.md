@@ -68,10 +68,10 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
    You can ensure the environment variables were set correctly by running the following commands. The output should match the corresponding values.
    ```bash
    (env) $ echo $WORKOS_API_KEY
-   (env) $ echo $WORKOS_PROJECT_ID
+   (env) $ echo $WORKOS_CLIENT_ID
    ```
 
-10. In `python-flask-sso-example/app.py` change the `CUSTOMER_EMAIL_DOMAIN` string value to an email domain that makes sense for your testing purposes if the default `gmail.com` isn't relevant.
+10. In `python-flask-sso-example/app.py` change the `CUSTOMER_EMAIL_DOMAIN` string value to an email domain that makes sense for your testing purposes if the default `gmail.com` isn't relevant. If you'd like to establish auth connection via Connection_ID instead, please change the `CUSTOMER_CONNECTION_ID` to your organization's connectionID. 
 
 11. The final setup step is to start the server.
    ```bash
