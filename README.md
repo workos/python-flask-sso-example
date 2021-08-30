@@ -44,7 +44,7 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
 
 6. Obtain and make note of the following values. In the next step, these will be set as environment variables.
    - Your [WorkOS API key](https://dashboard.workos.com/api-keys)
-   - Your [SSO-specific, WorkOS Project ID](https://dashboard.workos.com/configuration)
+   - Your [SSO-specific, WorkOS Client ID](https://dashboard.workos.com/configuration)
 
 7. Ensure you're in the root directory for the example app, `python-flask-sso-example/`. Create a `.env` file to securely store the environment variables. Open this file with the Nano text editor. (This file is listed in this repo's `.gitignore` file, so your sensitive information will not be checked into version control.)
    ```bash
@@ -55,7 +55,7 @@ An example Flask application demonstrating how to use the [WorkOS Python SDK](ht
 8. Once the Nano text editor opens, you can directly edit the `.env` file by listing the environment variables:
    ```bash
    export WORKOS_API_KEY=<value found in step 6>
-   export WORKOS_PROJECT_ID=<value found in step 6>
+   export WORKOS_CLIENT_ID=<value found in step 6>
    ```
 
    To exit the Nano text editor, type `CTRL + x`. When prompted to "Save modified buffer", type `Y`, then press the `Enter` or `Return` key.

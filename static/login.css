@@ -1,4 +1,4 @@
-.container {
+.container_login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,11 +6,76 @@
     width: 25%;
 }
 
+.container_success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    background-image: url(./images/mountain_image.jpeg);
+    background-size: cover;
+}
+
 .button {
-    background-color: #1c87c9;
-    color: white;
-    padding: 20px;
+    background-color: white;
+    border: 2px solid #555555;
+    color: black;
+    padding: 16px 32px;
     text-align: center;
     text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
     cursor: pointer;
+  }
+  
+.button:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.neg_margin_top {
+    margin-top: -35px;
+}
+
+h2, h1 {
+    text-align: center;
+    color: black;
+}
+
+.raw_response_div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+div.text_box {
+    background-color: rgb(188, 188, 188);
+    border-radius: 5px;
+    border: 2px solid #555555;
+    width: 75%;
+    padding: 10px;
+}
+
+.profile_image {
+    display: flex;
+    justify-content: left;
+    background-color: #555555;
+    height: 60px;
+    padding: 7px 7px 7px 10px;
+}
+.profile_image p {
+    padding-left: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.profile_image img {
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #2f2e2e;
 }
