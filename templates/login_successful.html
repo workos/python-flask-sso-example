@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='login.css')}}">
+    </head>
+    <body class="container_success">
+        <div class="profile_image">
+            <img src={{image}} alt="Profile Image">
+            <p>You're logged in {{first_name}}, welcome!</p>
+        </div>
+        <br>
+        <div class="raw_response_div">
+            <h2>Raw Profile Response Details</h2>
+            <div class="text_box">
+                <p>{{raw_profile}}</p>
+            </div>
+        </div>
+    </body>
+</html>
