@@ -3,6 +3,7 @@ import os
 from flask import (Flask, redirect, render_template, request, url_for)
 import workos
 
+
 # Flask Setup
 DEBUG = False
 app = Flask(__name__)
@@ -43,7 +44,15 @@ def auth_callback():
     profile = workos.client.sso.get_profile_and_token(code)
     p_profile = profile.to_dict()
     first_name = p_profile['profile']['first_name']
-    image = p_profile['profile']['raw_attributes']['picture']
+
+    if p_profile['profile']['raw_attributes']['picture']:
+        image = image = p_profile['profile']['raw_attributes']['picture']
+    else: 
+        image = "../static/images/workos_logo.png"
+
     raw_profile = p_profile['profile']
+
+
+
 
     return render_template('login_successful.html', first_name=first_name, image=image, raw_profile=raw_profile)
