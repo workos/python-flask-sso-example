@@ -45,14 +45,12 @@ def auth_callback():
     p_profile = profile.to_dict()
     first_name = p_profile['profile']['first_name']
 
-    if p_profile['profile']['raw_attributes']['picture']:
-        image = image = p_profile['profile']['raw_attributes']['picture']
+    if "picture" in p_profile['profile']['raw_attributes']:
+        image = p_profile['profile']['raw_attributes']['picture']
     else: 
         image = "../static/images/workos_logo.png"
 
     raw_profile = p_profile['profile']
-
-
 
 
     return render_template('login_successful.html', first_name=first_name, image=image, raw_profile=raw_profile)
