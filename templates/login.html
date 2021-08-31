@@ -1,10 +1,20 @@
 <html>
     <head>
         <link rel="stylesheet" href="{{ url_for('static', filename='login.css')}}">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     </head>
     <body class="container_login">
-        <img src="https://lever-client-logos.s3.amazonaws.com/e3c83704-791b-4132-9a4e-f0c96b56f4e3-1561992366051.png" alt="workos logo">
-        <h2 class="neg_margin_top">Python Flask SSO Example App</h2>
-        <a class="button" href="{{ url_for('auth') }}">Login</a>
+        <div class='flex_column'>
+            <div class="flex heading_div">
+                <img src="../static/images/workos_logo_new.png" alt="workos logo">
+                <div class="heading_text_div">
+                    <h1>WorkOS</h1>
+                </div>
+            </div>
+            
+            <h2>Python Flask SSO Example App</h2>
+            <a class="button login_button" href="{{ url_for('auth') }}">Login</a>
+        </div>
+        
     </body>
 </html>
