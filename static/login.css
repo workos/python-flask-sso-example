@@ -18,6 +18,8 @@ body {
 .container_login h1 {
     font-size: 65px;
     color: #111111;
+    position: relative;
+    bottom: 10px;
 }
 
 .flex {
@@ -110,6 +112,7 @@ h2, h1 {
     text-align: left;
     margin-bottom: 0px;
     font-weight: normal;
+    letter-spacing: -.05em;
 }
 
 .logged_in_div_left h2 {
@@ -118,6 +121,11 @@ h2, h1 {
     text-align: left;
     margin-top: 0px;
     font-weight: normal;
+    letter-spacing: -.05em;
+}
+
+.logged_in_div_left button {
+    padding: 8px 22px;
 }
 
 div.text_box {
