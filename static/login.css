@@ -50,6 +50,16 @@ body {
     align-self: center;
 }
 
+.container_success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    background-image: url(./images/mountain_image.jpeg);
+    background-size: cover;
+}
+
 .button {
     background-color: #6363f1;
     border: 2px solid #6363f1;
